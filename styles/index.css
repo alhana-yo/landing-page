@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "VodafoneRg";
-  src: url("./fonts/vodafone-regular.woff") format("woff");
-}
-
 .landing__main {
   color: #ffffff;
   font-family: "VodafoneRg", sans-serif;
@@ -13,17 +8,19 @@
 /* HERO SECTION */
 
 .hero {
-  width: 100%;
   background-image: url(../images/hero.png);
   background-size: cover;
 }
 
-.hero__wrapper {
+.section__wrapper {
   max-width: 300px;
   margin: 0 auto;
+  text-align: center;
+}
+
+.hero .section__wrapper {
   padding-top: 41px;
   padding-bottom: 41px;
-  text-align: center;
 }
 
 /* .hero__icon {
@@ -39,11 +36,13 @@
   margin-bottom: 15px;
 }
 
-.hero .text__upper-case {
+.hero .text__upper-case,
+.gallery .text__upper-case {
   text-transform: uppercase;
 }
 
-.hero .text__capitalize {
+.hero .text__capitalize,
+.gallery .text__capitalize {
   text-transform: capitalize;
 }
 
@@ -65,4 +64,32 @@
   background-color: #e60000;
   text-decoration: none;
   color: inherit;
+}
+
+/* GALLERY SECTION */
+
+.gallery {
+  background-color: #333333;
+}
+
+.gallery .section__wrapper {
+  padding-top: 32.7px;
+  /* padding-bottom: 41px; */
+}
+
+.gallery__title {
+  font-family: "VodafoneLt", sans-serif;
+  font-size: 26px;
+  /* font-size: 1.625em; */
+  line-height: 1.5;
+  margin-bottom: 26px;
+}
+
+.carousel {
+  display: block;
+  --slides-height: 266pt;
+  --slides-width: 175pt;
+  padding-bottom: 10pt;
+  --nav-point-color: rgb(182, 8, 8);
+  --main-color: rgb(87, 86, 86);
 }
