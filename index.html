@@ -4,15 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script type="module" src="./components/multi-carousel.js"></script>
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff"
+      href="./styles/fonts/vodafone-regular.woff"
+    />
 
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script type="module" src="./components/multi-carousel.js"></script>
     <title>Vodafone</title>
   </head>
-  <body>
-    <h1>Hello world!</h1>
+  <body class="landing">
+    <header class="landing__header">HEADER</header>
+    <main class="landing__main">
+      <section class="hero">
+        <div class="hero__wrapper">
+          <img
+            class="hero__icon"
+            src="./images/icons/tidal-logo.png"
+            alt="logo con el texto tidal"
+          />
+          <h2 class="hero__title">
+            <span class="text__upper-case">tidal</span>
+            <span class="text__capitalize">premium</span> llega a
+            <span class="text__capitalize">españa</span> con
+            <span class="text__capitalize">vodafone</span>
+          </h2>
+          <p class="hero__text">
+            <span class="text__capitalize">el</span> futuro de la música ya está
+            aquí, ahora <span class="text__upper-case">tidal</span> de regalo
+            con tu tarifa <span class="text__capitalize">vodafone</span>
+          </p>
+          <p class="hero__text hero__text--bold">
+            3 meses gratis con tu tarifa
+          </p>
 
-    <multi-carousel id="themaster" master>
+          <a class="hero__button">Activar</a>
+        </div>
+      </section>
+      <section class="gallery">
+        GALERIA
+        <!-- <multi-carousel id="themaster" master>
       <span>
         <h1>Esta es la slide 1</h1>
         <p>Sólo tiene un H1 y un P</p>
@@ -26,6 +60,9 @@
       </span>
       <span>Y esta es la slide 3</span>
       <span><h1>Y por último la slide 4</h1></span>
-    </multi-carousel>
+    </multi-carousel> -->
+      </section>
+      <section class="info">+ INFO</section>
+    </main>
   </body>
 </html>
