@@ -103,9 +103,10 @@ section {
 body {
   line-height: 1;
 }
-ol,
+a ol,
 ul {
   list-style: none;
+  text-decoration: none;
 }
 blockquote,
 q {

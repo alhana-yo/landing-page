@@ -63,4 +63,6 @@
   text-align: center;
   line-height: 34px;
   background-color: #e60000;
+  text-decoration: none;
+  color: inherit;
 }
