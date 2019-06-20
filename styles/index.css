@@ -184,4 +184,21 @@
     font-size: 30px;
     margin: 0 auto 35px;
   }
+
+  /* INFO SECTION */
+  .info .section__wrapper {
+    max-width: 707px;
+    padding-bottom: 26px;
+  }
+
+  .info .section__title {
+    font-size: 30px;
+    margin-bottom: 28px;
+  }
+  .info__list {
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    grid-column-gap: 5%;
+    grid-row-gap: 3px;
+  }
 }
