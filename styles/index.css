@@ -134,3 +134,11 @@
   margin-right: 12px;
   align-self: flex-start;
 }
+
+@media all and (min-width: 768px) {
+  .hero .section__wrapper {
+    max-width: 620px;
+    padding-top: 41px;
+    padding-bottom: 41px;
+  }
+}

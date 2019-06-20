@@ -27,11 +27,22 @@
     <main class="landing__main">
       <section class="hero">
         <div class="section__wrapper">
-          <img
+          <!-- <img
             class="hero__icon"
             src="./images/icons/tidal-logo.png"
             alt="logo con el texto tidal"
+          /> -->
+          <img
+            class="hero__icon"
+            srcset="
+              ./images/icons/tidal-logo.png     99w,
+              ./images/icons/tidal-logo@2x.png 198w
+            "
+            sizes="(max-width: 767px) 99px,
+            (max-width: 1279px) 198px"
+            alt="logo con el texto tidal"
           />
+
           <h2 class="hero__title">
             <span class="text__upper-case">tidal</span>
             <span class="text__capitalize">premium</span> llega a
