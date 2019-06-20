@@ -1,29 +1,27 @@
-@font-face {
-  font-family: "VodafoneRg";
-  src: url("./fonts/vodafone-regular.woff") format("woff");
-}
-
 .landing__main {
   color: #ffffff;
   font-family: "VodafoneRg", sans-serif;
   font-size: 1.25em; /*20px*/
   line-height: normal;
+  background-color: #333333;
 }
 
 /* HERO SECTION */
 
 .hero {
-  width: 100%;
   background-image: url(../images/hero.png);
   background-size: cover;
 }
 
-.hero__wrapper {
+.section__wrapper {
   max-width: 300px;
   margin: 0 auto;
+  text-align: center;
+}
+
+.hero .section__wrapper {
   padding-top: 41px;
   padding-bottom: 41px;
-  text-align: center;
 }
 
 /* .hero__icon {
@@ -39,11 +37,14 @@
   margin-bottom: 15px;
 }
 
-.hero .text__upper-case {
+.hero .text__upper-case,
+.gallery .text__upper-case {
   text-transform: uppercase;
 }
 
-.hero .text__capitalize {
+.hero .text__capitalize,
+.gallery .text__capitalize,
+.info .text__capitalize {
   text-transform: capitalize;
 }
 
@@ -51,8 +52,10 @@
   margin-bottom: 10px;
 }
 
-.hero__text--bold {
+.text__bold {
   font-weight: bold;
+}
+.hero .text__bold {
   margin-bottom: 30px;
 }
 
@@ -65,4 +68,69 @@
   background-color: #e60000;
   text-decoration: none;
   color: inherit;
+}
+
+/* GALLERY SECTION */
+
+/* .gallery {
+  background-color: #333333;
+} */
+
+.gallery .section__wrapper {
+  padding-top: 32.7px;
+  /* padding-bottom: 41px; */
+}
+
+.section__title {
+  font-family: "VodafoneLt", sans-serif;
+  font-size: 26px;
+  /* font-size: 1.625em; */
+}
+
+.gallery .section__title {
+  line-height: 1.5;
+  margin-bottom: 26px;
+}
+
+.carousel {
+  display: block;
+  --slides-height: 266pt;
+  --slides-width: 175pt;
+  padding-bottom: 10pt;
+  --nav-point-color: rgb(182, 8, 8);
+  --main-color: rgb(87, 86, 86);
+}
+
+/* INFO SECTION */
+
+.info .section__wrapper {
+  max-width: 292px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.info .section__title {
+  /* margin-top: 30px; */
+  margin-bottom: 27px;
+}
+
+.info__list {
+  text-align: left;
+}
+
+.info__list > .info__list__element {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 14px;
+}
+
+.info__list__element {
+  display: flex;
+}
+
+.list__element__icon {
+  width: 25px;
+  height: auto;
+  margin-right: 12px;
+  align-self: flex-start;
 }
