@@ -201,4 +201,31 @@
     grid-column-gap: 5%;
     grid-row-gap: 3px;
   }
+  .info__list__element--one {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .info__list__element--two {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .info__list__element--three {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .info__list__element--four {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .info__list__element--five {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .info__list__element--six {
+    grid-column: 2;
+    grid-row: 3;
+  }
 }
