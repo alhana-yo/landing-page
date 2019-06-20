@@ -122,14 +122,14 @@ class MultiCarousel extends LitElement {
     return css`
       :host {
         --main-color: #000;
-        --slides-bg-color: #fff;
+        --slides-bg-color: #333333;
         --slides-border: 10px solid var(--slides-bg-color);
         --slides-border-radius: 0px;
         --slides-padding: 0;
         --slides-width: 820px;
         --slides-height: 420px;
-        --hover-arrow-color: #ff0;
-        --nav-point-color: #3a3a3a;
+        --hover-arrow-color: #fff;
+        --nav-point-color: #afafaf;
         height: 100%;
         overflow-x: hidden;
         text-align: center;

@@ -22,16 +22,12 @@
     <script type="module" src="./components/multi-carousel.js"></script>
     <title>Vodafone</title>
   </head>
+
   <body class="landing">
     <header class="landing__header">HEADER</header>
     <main class="landing__main">
       <section class="hero">
         <div class="section__wrapper">
-          <!-- <img
-            class="hero__icon"
-            src="./images/icons/tidal-logo.png"
-            alt="logo con el texto tidal"
-          /> -->
           <img
             class="hero__icon"
             srcset="
@@ -77,60 +73,85 @@
           <multi-carousel class="carousel" id="themaster">
             <div>
               <style>
-                .teacher__list__item__name {
-                  color: #b92e52;
-                  text-align: center;
-                  padding-bottom: 8pt;
-                  text-transform: capitalize;
-                  font-family: "DINPro-CondMedium";
-                  font-size: 16pt;
-                  font-weight: 300;
-                  margin-top: 0;
-                  margin-bottom: 0pt;
-                }
-                .teacher__list__item__position {
-                  font-family: "Avenir-Medium";
-                  font-size: 13pt;
-                  text-align: center;
-                  font-weight: 300;
-                  color: rgb(87, 86, 86);
-                  margin-top: 0;
-                }
-                .teacher__list__item__wrapper .teacher__list__item__img {
+                .carousel__wrapper .carousel__img {
                   display: block;
-                  width: 150pt;
-                  height: 150pt;
-                  border-radius: 50%;
-                  border: 5pt solid #b92e52;
-                  margin: 10pt auto;
+                  width: 100%;
+                  height: auto;
                 }
-                .teacher__list__item__link {
-                  text-decoration: none;
-                  color: rgb(87, 86, 86);
+
+                .carousel__title {
+                  color: #fff;
+                  text-align: center;
+                  padding-bottom: 8px;
+                  text-transform: capitalize;
+                  font-family: "VodafoneRg", sans-serif;
+                  font-size: 18px;
+                  font-weight: bold;
+                  line-height: normal;
+                }
+
+                .carousel__text {
+                  font-family: "VodafoneRg", sans-serif;
+                  font-size: 16px;
+                  text-align: center;
+                  line-height: normal;
+                  color: #fff;
                 }
               </style>
 
-              <a
-                href="https://www.linkedin.com/in/gotoalberto/"
-                target="_blank"
-                class="teacher__list__item__link"
-                title="Abre ventana nueva a Linkedin"
-              >
-                <div class="teacher__list__item__wrapper">
-                  <img
-                    class="teacher__list__item__img"
-                    src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjI66vO8ffiAhUEixoKHdSdCSsQjRx6BAgBEAU&url=https%3A%2F%2Ftwitter.com%2Fcatotday&psig=AOvVaw35vFa-FcvIEe7P7ZBhw8A4&ust=1561114165327178"
-                    alt="Alberto Gómez Toribio"
-                    loading="lazy"
-                  />
-                </div>
-                <h4 class="teacher__list__item__name">
-                  Alberto Gómez
-                </h4>
-                <h5 class="teacher__list__item__position">
-                  Especialista de Blockchain y Tokenomics
-                </h5>
-              </a>
+              <div class="carousel__wrapper">
+                <img
+                  class="carousel__img"
+                  srcset="./images/card1.png 261w, ./images/card1@2x.png 522w"
+                  sizes="(max-width: 767px) 261px,
+                (max-width: 1279px) 522px"
+                  alt="Imagen decorativa"
+                />
+
+                <h3 class="carousel__title">
+                  estrenos en exclusiva
+                </h3>
+                <p class="carousel__text">
+                  TIDAL ha estrenado en exclusiva los mejores álbumes de los dos
+                  últimos años y siempre con la mejor calidad de sonido.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="carousel__wrapper">
+                <img
+                  class="carousel__img"
+                  srcset="./images/card2.png 371w, ./images/card2@2x.png 742w"
+                  sizes="(max-width: 767px) 371px,
+                (max-width: 1279px) 742px"
+                  alt="Imagen decorativa"
+                />
+
+                <h3 class="carousel__title">
+                  el mejor contenido audiovisual
+                </h3>
+                <p class="carousel__text">
+                  más de 200 mil videos musicales en alta definición, streaming
+                  de conciertos en directo y series originales.
+                </p>
+              </div>
+              <div class="carousel__wrapper">
+                <img
+                  class="carousel__img"
+                  srcset="./images/card3.png 370w, ./images/card3@2x.png 740w"
+                  sizes="(max-width: 767px) 370px,
+                  (max-width: 1279px) 740px"
+                  alt="Imagen decorativa"
+                />
+
+                <h3 class="carousel__title">
+                  mucho más que música
+                </h3>
+                <p class="carousel__text">
+                  Recomendaciones de conciertos según tus gustos y localización
+                  geográfica. Gana entradas para tus conciertos preferidos.
+                </p>
+              </div>
             </div>
           </multi-carousel>
         </div>

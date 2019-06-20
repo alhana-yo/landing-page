@@ -94,8 +94,8 @@
 
 .carousel {
   display: block;
-  --slides-height: 266pt;
-  --slides-width: 175pt;
+  --slides-height: 195pt;
+  --slides-width: 148pt;
   padding-bottom: 10pt;
   --nav-point-color: rgb(182, 8, 8);
   --main-color: rgb(87, 86, 86);
