@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "VodafoneRg";
+  src: url("./fonts/vodafone-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "VodafoneLt";
+  src: url("./fonts/vodafone-light.woff") format("woff");
+}

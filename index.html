@@ -4,28 +4,215 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script type="module" src="./components/multi-carousel.js"></script>
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff"
+      href="./styles/fonts/vodafone-regular.woff"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff"
+      href="./styles/fonts/vodafone-light.woff"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/typography.css" />
     <link rel="stylesheet" href="./styles/index.css" />
-
+    <script type="module" src="./components/multi-carousel.js"></script>
     <title>Vodafone</title>
   </head>
-  <body>
-    <h1>Hello world!</h1>
+  <body class="landing">
+    <header class="landing__header">HEADER</header>
+    <main class="landing__main">
+      <section class="hero">
+        <div class="section__wrapper">
+          <!-- <img
+            class="hero__icon"
+            src="./images/icons/tidal-logo.png"
+            alt="logo con el texto tidal"
+          /> -->
+          <img
+            class="hero__icon"
+            srcset="
+              ./images/icons/tidal-logo.png     99w,
+              ./images/icons/tidal-logo@2x.png 198w
+            "
+            sizes="(max-width: 767px) 99px,
+            (max-width: 1279px) 198px"
+            alt="logo con el texto tidal"
+          />
 
-    <multi-carousel id="themaster" master>
-      <span>
-        <h1>Esta es la slide 1</h1>
-        <p>Sólo tiene un H1 y un P</p>
-      </span>
-      <span>
-        <h2>Esta es la slide 2</h2>
-        <p>Esta es un poco mas compleja porque además tiene una image</p>
-        <img
-          src="https://images.freeimages.com/images/small-previews/adf/sun-burst-1478549.jpg"
-        />
-      </span>
-      <span>Y esta es la slide 3</span>
-      <span><h1>Y por último la slide 4</h1></span>
-    </multi-carousel>
+          <h2 class="hero__title">
+            <span class="text__upper-case">tidal</span>
+            <span class="text__capitalize">premium</span> llega a
+            <span class="text__capitalize">españa</span> con
+            <span class="text__capitalize">vodafone</span>
+          </h2>
+          <p class="hero__text">
+            <span class="text__capitalize">el</span> futuro de la música ya está
+            aquí, ahora <span class="text__upper-case">tidal</span> de regalo
+            con tu tarifa <span class="text__capitalize">vodafone</span>
+          </p>
+          <p class="hero__text text__bold">
+            3 meses gratis con tu tarifa
+          </p>
+
+          <a
+            target="_blank"
+            href=""
+            title="Activar tarifa TIDAL, abre pestaña nueva"
+            class="hero__button"
+            >Activar</a
+          >
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="section__wrapper">
+          <h2 class="section__title">
+            <span class="text__capitalize">descubre</span> por qué
+            <span class="text__upper-case">tidal</span> es mucho más que una
+            plataforma de música
+          </h2>
+          <multi-carousel class="carousel" id="themaster">
+            <div>
+              <style>
+                .teacher__list__item__name {
+                  color: #b92e52;
+                  text-align: center;
+                  padding-bottom: 8pt;
+                  text-transform: capitalize;
+                  font-family: "DINPro-CondMedium";
+                  font-size: 16pt;
+                  font-weight: 300;
+                  margin-top: 0;
+                  margin-bottom: 0pt;
+                }
+                .teacher__list__item__position {
+                  font-family: "Avenir-Medium";
+                  font-size: 13pt;
+                  text-align: center;
+                  font-weight: 300;
+                  color: rgb(87, 86, 86);
+                  margin-top: 0;
+                }
+                .teacher__list__item__wrapper .teacher__list__item__img {
+                  display: block;
+                  width: 150pt;
+                  height: 150pt;
+                  border-radius: 50%;
+                  border: 5pt solid #b92e52;
+                  margin: 10pt auto;
+                }
+                .teacher__list__item__link {
+                  text-decoration: none;
+                  color: rgb(87, 86, 86);
+                }
+              </style>
+
+              <a
+                href="https://www.linkedin.com/in/gotoalberto/"
+                target="_blank"
+                class="teacher__list__item__link"
+                title="Abre ventana nueva a Linkedin"
+              >
+                <div class="teacher__list__item__wrapper">
+                  <img
+                    class="teacher__list__item__img"
+                    src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjI66vO8ffiAhUEixoKHdSdCSsQjRx6BAgBEAU&url=https%3A%2F%2Ftwitter.com%2Fcatotday&psig=AOvVaw35vFa-FcvIEe7P7ZBhw8A4&ust=1561114165327178"
+                    alt="Alberto Gómez Toribio"
+                    loading="lazy"
+                  />
+                </div>
+                <h4 class="teacher__list__item__name">
+                  Alberto Gómez
+                </h4>
+                <h5 class="teacher__list__item__position">
+                  Especialista de Blockchain y Tokenomics
+                </h5>
+              </a>
+            </div>
+          </multi-carousel>
+        </div>
+      </section>
+      <section class="info">
+        <div class="section__wrapper">
+          <h2 class="section__title">
+            <span class="text__capitalize">además</span> podrás disfrutar de:
+          </h2>
+          <ul class="info__list">
+            <li class="info__list__element info__list__element--one">
+              <img
+                class="list__element__icon"
+                src="./images/icons/tick-or-solved.svg"
+                alt="icono con un tick"
+              />
+              <p class="list__element__text">
+                <span class="text__capitalize">el</span> más
+                <span class="text__bold">extenso catálogo</span> de
+                <span class="text__bold">música en alta calidad</span>.
+              </p>
+            </li>
+            <li class="info__list__element info__list__element--two">
+              <img
+                class="list__element__icon"
+                src="./images/icons/tick-or-solved.svg"
+                alt="icono con un tick"
+              />
+              <p class="list__element__text">
+                <span class="text__capitalize">reproducción</span> de música
+                <span class="text__bold">sin conexión</span>.
+              </p>
+            </li>
+            <li class="info__list__element info__list__element--three">
+              <img
+                class="list__element__icon"
+                src="./images/icons/tick-or-solved.svg"
+                alt="icono con un tick"
+              />
+              <p class="list__element__text">
+                <span class="text__capitalize text__bold">multidispositivo</span
+                >: hasta 3 dispositivos en modo sin conexión.
+              </p>
+            </li>
+            <li class="info__list__element info__list__element--four">
+              <img
+                class="list__element__icon"
+                src="./images/icons/tick-or-solved.svg"
+                alt="icono con un tick"
+              />
+              <p class="list__element__text">
+                <span class="text__capitalize">podrás</span> compartir música a
+                través de <span class="text__bold">redes sociales</span>.
+              </p>
+            </li>
+            <li class="info__list__element info__list__element--five">
+              <img
+                class="list__element__icon"
+                src="./images/icons/tick-or-solved.svg"
+                alt="icono con un tick"
+              />
+              <p class="list__element__text">
+                <span class="text__bold"
+                  >"<span class="text__capitalize">crossfade</span>”</span
+                >: evita el corte entre pistas al reproducir varias canciones.
+              </p>
+            </li>
+            <li class="info__list__element info__list__element--six">
+              <img
+                class="list__element__icon"
+                src="./images/icons/tick-or-solved.svg"
+                alt="icono con un tick"
+              />
+              <p class="list__element__text">
+                <span class="text__capitalize">opción</span>
+                <span class="text__bold">“Workout”</span>: propone canciones
+                según los gustos del usuario y el ritmo de carrera.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
