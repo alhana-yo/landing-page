@@ -27,11 +27,22 @@
     <main class="landing__main">
       <section class="hero">
         <div class="section__wrapper">
-          <img
+          <!-- <img
             class="hero__icon"
             src="./images/icons/tidal-logo.png"
             alt="logo con el texto tidal"
+          /> -->
+          <img
+            class="hero__icon"
+            srcset="
+              ./images/icons/tidal-logo.png     99w,
+              ./images/icons/tidal-logo@2x.png 198w
+            "
+            sizes="(max-width: 767px) 99px,
+            (max-width: 1279px) 198px"
+            alt="logo con el texto tidal"
           />
+
           <h2 class="hero__title">
             <span class="text__upper-case">tidal</span>
             <span class="text__capitalize">premium</span> llega a
@@ -133,7 +144,7 @@
             <span class="text__capitalize">además</span> podrás disfrutar de:
           </h2>
           <ul class="info__list">
-            <li class="info__list__element">
+            <li class="info__list__element info__list__element--one">
               <img
                 class="list__element__icon"
                 src="./images/icons/tick-or-solved.svg"
@@ -145,7 +156,7 @@
                 <span class="text__bold">música en alta calidad</span>.
               </p>
             </li>
-            <li class="info__list__element">
+            <li class="info__list__element info__list__element--two">
               <img
                 class="list__element__icon"
                 src="./images/icons/tick-or-solved.svg"
@@ -156,7 +167,7 @@
                 <span class="text__bold">sin conexión</span>.
               </p>
             </li>
-            <li class="info__list__element">
+            <li class="info__list__element info__list__element--three">
               <img
                 class="list__element__icon"
                 src="./images/icons/tick-or-solved.svg"
@@ -167,7 +178,7 @@
                 >: hasta 3 dispositivos en modo sin conexión.
               </p>
             </li>
-            <li class="info__list__element">
+            <li class="info__list__element info__list__element--four">
               <img
                 class="list__element__icon"
                 src="./images/icons/tick-or-solved.svg"
@@ -178,7 +189,7 @@
                 través de <span class="text__bold">redes sociales</span>.
               </p>
             </li>
-            <li class="info__list__element">
+            <li class="info__list__element info__list__element--five">
               <img
                 class="list__element__icon"
                 src="./images/icons/tick-or-solved.svg"
@@ -190,7 +201,7 @@
                 >: evita el corte entre pistas al reproducir varias canciones.
               </p>
             </li>
-            <li class="info__list__element">
+            <li class="info__list__element info__list__element--six">
               <img
                 class="list__element__icon"
                 src="./images/icons/tick-or-solved.svg"
